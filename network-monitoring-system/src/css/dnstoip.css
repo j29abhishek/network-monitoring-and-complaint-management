@@ -1,0 +1,276 @@
+
+
+.dns-lookup-page {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(247, 247, 247, 0.804);
+}
+
+.dns-navbar {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    box-shadow: 0px 2px 12px 1px rgba(223, 220, 220, 0.596);
+    margin:auto;
+}
+
+.dns-logo {
+    font-size: 30px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+.dns-links {
+    display: flex;
+    gap: 20px;
+}
+
+.dns-links li a{
+    text-decoration: none;
+    color: black;
+}
+
+.dns-links li {
+    list-style-type: none;
+}
+
+.dns-contents {
+    width: 100%;
+    /* background-color: green; */
+    min-height: 77vh;
+    margin: 20px auto;
+    overflow:auto;
+    scrollbar-width: thin;           /* Firefox */
+  scrollbar-color: #888 transparent; /* Firefox */
+}
+
+
+
+.dns-form {
+    /* background-color: white; */
+    width: 600px;
+    /* height: 200px; */
+    margin: 50px auto;
+}
+
+.dns-input {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dns-input input {
+    width: 90%;
+    height: 45px;
+    border: none;
+    text-indent: 20px;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 10px;
+}
+
+.dns-input input::placeholder{
+    font-size: 16px;
+    text-indent: 20px;
+
+}
+
+.dns-button{
+    position: absolute;
+    right:20px;
+    height: 46px;
+    padding:0px 20px;
+    border: none;
+    color:white;
+    background-color: rgb(53, 0, 128);
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+
+.dns-button:hover{
+    cursor:pointer;
+}
+
+.dns-about-area{
+    width:600px;
+    margin:auto;
+}
+
+.dns-about-area p{
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height:30px;
+    font-weight:300;
+}
+
+.dns-info{
+    width:600px;
+    background-color: white;
+    
+    /* padding:20px 20px; */
+    display: flex; 
+    flex-direction: column;
+    align-items:space-between;
+    gap:30px;
+    justify-content: center;
+    margin:20px auto;
+    border-radius: 10px;
+}
+
+.dns-info h4{
+text-align: center;
+margin:10px;
+}
+
+.dns-info button{
+    border:none;
+    cursor: pointer;
+    background-color:transparent;
+    border:none;
+    outline: none;
+}
+
+
+.copy-to-clip{
+    font-size: 30px;
+    color:rgb(88, 2, 185);
+}
+
+
+
+.dns-ip-entry{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:4px 30px ;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width:90%;
+    margin:20px auto;
+    position: relative;
+}
+
+/* .dnsipcopy{
+    position: relative;
+} */
+.copied-message{
+ display:flex;
+ justify-content: center;
+}
+
+.error-message{
+    text-align: center;
+    /* padding:20px; */
+    max-height: 30px;
+}
+
+.dns-contents::-webkit-scrollbar{
+    width:0px;
+    height: 0px;
+}
+
+.dns-contents:hover::-webkit-scrollbar,
+.scrollable:active::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.dns-contents::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dns-contents::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+.dnsip-to-dashboard{
+    cursor: pointer;
+}
+@media only screen and (max-width:650px){
+    .dns-navbar{
+        height: 60px;
+        padding:20px;
+    }
+
+    .dns-logo{
+        font-size: 18px;
+    }
+
+    .dns-lookup-area{
+        width:100%;
+    }
+
+    .dns-form{
+        width:98%;
+    }
+    .dns-about-area{
+        width:90%;
+        margin:auto;
+        font-size: 14px;
+
+    }
+    .dns-input{
+        width:100%;
+    }
+
+    .dns-input input{
+        width:95%;
+    }
+
+    .dns-button{
+        font-size: 14px;
+        padding:0px 5px;
+        right: 10px
+    }
+ 
+    .dns-info{
+        width:95%;
+        /* border-radius:0px; */
+    }
+
+    .dns-ip-entry{
+        padding:5px 10px;
+    }
+
+    .dns-input input::placeholder{
+    font-size: 14px;
+    text-indent: 10px;
+
+}
+}
+
+.dns-footer{
+    background-color: rgb(62, 62, 62);
+    height: 60px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    bottom: 10px;
+    /* margin-bottom:0px; */
+    width:100%;
+    
+}
+
+@media only screen and (max-width:400px){
+    .dns-logo{
+        font-size: 16px;
+    }
+
+    .dns-links{
+        font-size: 12px;
+    }
+}

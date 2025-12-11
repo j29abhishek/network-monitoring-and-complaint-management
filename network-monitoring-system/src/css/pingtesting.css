@@ -1,0 +1,182 @@
+.ping-testing-page {
+    height: 95vh;
+    background-color: white;
+    width: 95vw;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pingtest-heading {
+    margin: .5rem;
+    padding: 0rem 1rem;
+}
+
+.ping-testing-heading {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+button.go-to-dashboard {
+    padding: 3px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.go-to-dashboard .back-icon {
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.ping-testing-subtext {
+    color: rgb(53, 52, 52);
+    font-size: 14px;
+}
+
+.ping-testing-form form {
+    display: flex;
+    gap: 20px;
+    margin: .5rem 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ping-testing-form .input {
+    flex: 1;
+    min-width: 250px;
+}
+
+.ping-testing-form .input input {
+    width: 100%;
+    min-height: 40px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 5px;
+    padding: 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.ping-testing-form .ping-button {
+    min-width: 150px;
+    margin-top: 20px;
+}
+
+.ping-testing {
+    background-color: rgb(2, 177, 2);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ping-testing-result {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 1rem;
+}
+
+.ping-testing-result .test-heading {
+    margin: 10px auto;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.ping-status-green{
+color:green;
+}
+
+.ping-status-red{
+    color:red;
+}
+
+.ping-result-set {
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.ping-result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ping-result-table th, 
+.ping-result-table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+/* ---------- Responsive Adjustments ---------- */
+
+@media (max-width: 550px) {
+    .ping-testing-form form {
+        /* flex-direction: column; */
+        align-items: stretch;
+    }
+
+    .ping-testing-form .ping-button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .ping-testing-form .ping-button button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ping-testing-page {
+        height: auto;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .pingtest-heading {
+        text-align: center;
+    }
+
+    .ping-testing-heading {
+        justify-content: center;
+    }
+
+    .ping-testing-subtext {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .ping-result-set {
+        overflow-x: auto;
+    }
+
+    .ping-result-table {
+        font-size: 14px;
+        min-width: 600px; /* keep table readable on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .ping-testing-subtext {
+        font-size: 12px;
+    }
+
+    .ping-result-table {
+        font-size: 12px;
+        min-width: 500px;
+    }
+
+    .ping-testing-form .input {
+        min-width: 100%;
+    }
+}

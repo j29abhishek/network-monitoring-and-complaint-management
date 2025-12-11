@@ -1,0 +1,395 @@
+.ipcollection-page {
+    display: flex;
+    width: 100vw;
+    justify-self: center;
+    align-items: center;
+}
+
+.ip-collection {
+    background: white;
+    margin: 30px auto;
+    width: 80%;
+    height: auto;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.ip-collection .heading {
+    position: relative;
+    height: 60px;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(42, 43, 42);
+    border-radius: 5px 5px 0px 0px;
+    text-transform: uppercase;
+}
+
+.ip-collection-dept {
+    margin-top: 20px;
+}
+
+
+.form-area {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 5%;
+}
+
+.form-area1 {
+    width: 45%;
+    /* height: 500px; */
+    /* border: 2px solid grey; */
+}
+
+.form-area2 {
+    width: 45%;
+    /* height: 500px; */
+    /* border: 2px solid grey; */
+}
+
+.select-department {
+    width: 90%;
+    margin: 20px auto 0px;
+    /* margin-top: 20px; */
+}
+
+#department-name {
+    height: 40px;
+    font-size: 1rem;
+    /* padding-left: 20px; */
+    border: none;
+    outline: none;
+
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.input label {
+    text-indent: 5px;
+    font-weight: 600;
+}
+
+.input input {
+    width: 100%;
+    min-height: 40px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 5px;
+    text-indent: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.submit-button {
+    background-color: rgb(34, 34, 34);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 15rem;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    margin-left: 5%;
+}
+
+.message {
+    margin: 5px;
+}
+
+/*CSS FOR IPADDRESS LIST*/
+.ipaddress-list-container {
+    width: 100vw;
+    background-color: white;
+    overflow: auto;
+}
+
+.table-title {
+    margin: 1rem 1rem .5rem 1rem;
+    padding: 0rem 1rem;
+}
+
+.f-update{
+    color:rgb(21, 224, 7);
+}
+
+.f-delete{
+color:red;
+}
+
+.table-title-heading {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+button.go-to-dashboard {
+    padding: 3px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.go-to-dashboard .back-icon {
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.table-title-subtext {
+    color: rgb(53, 52, 52);
+}
+
+.admin-listing-filter-option {
+    display: flex;
+    margin: 0rem 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.admin-listing-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* padding: .5rem; */
+}
+
+.admin-listing-search input {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.table-container {
+    margin: 1rem 2rem;
+    height: 70vh;
+    overflow: auto;
+}
+
+.ip-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.ip-table th,
+.ip-table td {
+    border: none;
+    outline: none;
+    padding: 6px 6px;
+    text-align: left;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.ip-table th {
+    font-weight: 600;
+    background-color: #c8ecec;
+    color: #333;
+}
+
+.ip-table tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.2s ease;
+}
+
+.ip-listing-filter-option {
+    display: flex;
+    margin: 0rem 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:flex-end;
+    padding:.5rem 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.ip-search {
+ display: flex;
+    align-items: center;
+    gap:10px;
+    width:400px;
+    
+}
+
+.ip-search input {
+    padding: 10px auto;
+    width:100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+.pagination {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#next,
+#prev {
+    background-color: rgb(0, 0, 0);
+    padding: 4px 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+#next:hover,
+#prev:hover {
+    background-color: white;
+    color: black;
+}
+
+.rows-per-page {
+    width: 100px;
+}
+
+.row-number-n-pagination {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.edit-delete {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.edit-delete a {
+    text-decoration: none;
+    color: black;
+    /* border:none; */
+}
+
+/*END--IP-ADDRESS-LIST*/
+
+
+@media only screen and (max-width: 1250px) {
+    .ip-search {
+        width: 100%;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .ip-search input {
+        /* width: 80%; */
+        height: 35px;
+        margin-left: 15px;
+    }
+
+    .table-container {
+        margin: auto 10px;
+    }
+
+
+    .ip-address-list-area {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .row-number-n-pagination {
+        margin-top: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    body {
+        background-color: white;
+        margin-top: 30px;
+
+    }
+
+    .ip-collection {
+        width: 100%;
+        margin-top: 0px;
+        min-height: 100vh;
+        border-radius: 0px;
+        box-shadow: none;
+        padding: 0px;
+
+
+    }
+
+    .form-area {
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
+
+    }
+
+    .form-area1,
+    .form-area2 {
+        width: 100%;
+    }
+
+    #department-name {
+        height: 50px;
+        padding: 0px;
+    }
+
+    .input input {
+        height: 50px;
+    }
+
+    .ipcollection-page .submit-button {
+        margin-bottom: 30px;
+        /* margin-left: 0px; */
+    }
+}
+
+
+@media only screen and (max-width:500px) {
+    .row-number-n-pagination {
+        position: sticky;
+        bottom: 0px;
+        gap: 2px;
+        background-color: white;
+        font-size: 12px;
+        flex-direction: row-reverse;
+        margin-bottom: 0px;
+
+    }
+
+    .table-title {
+        border-radius: 0px;
+    }
+
+    .ip-collection .heading {
+        font-size: 16px;
+    }
+
+    .ip-search input {
+        width: 70%;
+    }
+
+
+
+}

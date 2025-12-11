@@ -1,0 +1,137 @@
+.feature-card {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db; /* light gray border */
+  border-left: 2px solid #003366; /* Tata navy accent */
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+  font-size: 2.2rem;
+  color: #0097a7; /* Tata-style teal accent */
+  margin-top: 0.3rem;
+}
+
+.card-content h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #002147; /* Tata dark blue */
+  margin-bottom: 0.4rem;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #374151; /* slate gray text */
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer {
+  background: linear-gradient(135deg, #1f2937, #111827);
+  color: #f3f4f6;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 2px solid #6366f1;
+  margin-top: 3rem;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logos img {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+  transition: transform 0.3s ease;
+}
+
+.footer-logos img:hover {
+  transform: scale(1.05);
+}
+
+.footer-description {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-description p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #d1d5db;
+}
+
+.footer-description p strong {
+  color: #60a5fa;
+}
+
+.footer-description a {
+  color: #a78bfa;
+  text-decoration: none;
+}
+
+.footer-description a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Enhancements */
+@media screen and (max-width: 600px) {
+  .footer-logos {
+    gap: 1.5rem;
+  }
+
+  .footer-logos img {
+    max-width: 90px;
+  }
+
+  .footer-description p {
+    font-size: 0.9rem;
+  }
+}
+
+.go-back-button{
+    position: relative;
+}
+
+@media only screen and (max-width:1350px){
+    .feature-card{
+        width: 48%;
+    }
+
+
+}
+
+
+@media only screen and (max-width:850px){
+    .feature-card{
+        width:100%;
+        margin:auto;
+    }
+}
+
+
+@media only screen and (max-width:450px){
+    .footer-logos img{
+        width:45%;
+    }
+}

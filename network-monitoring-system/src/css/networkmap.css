@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.back-to-home {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.back {
+    background-color: black;
+    color: white;
+    height: 30px;
+    padding: 2px 20px;
+}
+
+.network-map-page {
+    width: 100vw;
+}
+
+.network-map-header {
+    margin: 0.5rem;
+    padding: 0rem 1rem;
+}
+
+.network-map-title{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+button.go-to-dashboard {
+    padding: 3px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.go-to-dashboard .back-icon {
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.network-map-page .heading-map {
+    /* padding:2px 10px; */
+    display: flex;
+    font-size: .8rem;
+    justify-content: center;
+    /* background-color: black; */
+    color: black;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.network-map-container {
+    width: 98%;
+    /* background-color: rgb(217, 248, 217); */
+    height: 90vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.network-map {
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px 2px;
+}
+
+.network-map-1 {
+    grid-column: 1/4;
+    background-color: rgba(243, 244, 244, 0.836);
+}
+
+.network-map-2 {
+    background-color: rgb(247, 241, 250);
+}
+
+.network-map-3 {
+    grid-column: 2/4;
+    background-color: rgba(240, 221, 209, 0.352);
+}
+
+/* .network-map-1,.network-map-2,.network-map-3{
+    background-color: rgba(249, 229, 250, 0.927);
+    border-radius: 20px;
+} */
+
+.map-containers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.ip-address-status {
+    width: fit-content;
+    background-color: rgb(254, 177, 177);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    /* font-size: 14px; */
+}
+
+.institute-icon {
+    font-size: 20px;
+    /* background-color: rgb(230, 231, 230); */
+    border-radius: 10px;
+    color: rgb(151, 129, 4);
+}
+
+.ip-status {
+    display: flex;
+    gap: 5px;
+}
+
+#up-down {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#organization {
+    letter-spacing: 1px;
+}
+
+#inst-ip-address {
+    font-weight: 900;
+}
+
+.bandwidth-provider {
+    margin: 5px auto;
+    width: fit-content;
+    font-size: .7rem;
+}
+
+.ip-address-status p {
+    font-size: 10px;
+    letter-spacing: 1px;
+    /* font-weight: 700; */
+}
+
+.ip-status-details h3 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.add-ip-address-page {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(240, 239, 240);
+}
+
+.add-ip-form-area {
+    /* background-color: green; */
+    background-color: white;
+    border-radius: 10px;
+    width: 500px;
+    /* height: 400px; */
+    margin: auto;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.add-ip-form-area .heading {
+    position: relative;
+    height: 60px;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(40, 40, 40);
+    border-radius: 5px 5px 0px 0px;
+    text-transform: uppercase;
+
+}
+
+.add-ip-to-map-form {
+    width: 80%;
+    margin: auto;
+}
+
+.back-from-add-ip {
+    position: absolute;
+    left: .8rem;
+    cursor: pointer;
+
+}
+
+
+.add-ip-to-map-form .input {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    gap: 5px;
+}
+
+.input label {
+    text-indent: 5px;
+    font-weight: 600;
+}
+
+.input input {
+    width: 100%;
+    min-height: 40px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 5px;
+    text-indent: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+.add-ip-button button {
+    background-color: rgb(35, 36, 35);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* width: 15rem; */
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    /* margin-left: 5%; */
+    margin: 20px auto;
+    float: right;
+}
+
+
+
+@media (max-width:550px) {
+    .add-ip-form-area {
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    }
+
+    .add-ip-form-area .heading {
+        border-radius: 0px;
+        font-size: 15px;
+    }
+
+    .add-ip-address-page {
+        background-color: white;
+        display: block;
+    }
+
+    .add-ip-to-map-form {
+        width: 95%;
+        margin: auto;
+        font-size: 15px;
+    }
+
+    .add-ip-button button {
+        padding: 5px 20px;
+    }
+
+    .input input {
+        height: 45px;
+    }
+}

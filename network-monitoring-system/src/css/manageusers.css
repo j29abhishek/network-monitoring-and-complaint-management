@@ -1,0 +1,147 @@
+.manage-user-page {
+    width: 100vw;
+    position: relative;
+}
+
+.manage-user-header {
+    margin: 1rem;
+    padding: 0rem 1rem;
+}
+
+.manage-user-header-title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-for-user-relative {
+    display: flex;
+    margin: 0rem 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.search-for-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+
+.search-for-user .input {
+    width: 80%;
+}
+
+.search-for-user .input input {
+    border-radius: 3px;
+}
+
+.search-for-user .search-user {
+    background-color: rgb(188, 185, 185);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.user-registration-requests {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.user-registration-requests-wrapper {
+    margin: 1rem;
+    width:calc(100% - 4rem)
+}
+
+.user-registration-requests-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.col-serial {
+    width: 5%;
+}
+
+.col-name {
+    width: 30%;
+}
+
+.col-email {
+    width: 20%;
+}
+
+.approve-user-registration {
+    padding: 3px 5px;
+    background: rgb(40, 188, 3);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.user-registration-requests-table th,
+.user-registration-requests-table td {
+    border: none;
+    outline: none;
+    padding: 8px 6px;
+    text-align: left;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.user-registration-requests-table th {
+    font-weight: 600;
+    background-color: #c8ecec;
+    color: #333;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .user-registration-requests {
+        width: 98%;
+        /* font-size: 13px; */
+    }
+
+    .search-for-user {
+        width: 100%;
+        /* gap: 5px; */
+    }
+
+    .search-for-user .input input {
+        border-radius: 3px;
+        height: 25px;
+    }
+
+    .col-serial {
+        width: 10%;
+    }
+
+    .col-contact {
+        width: 200px;
+    }
+
+    .col-name {
+        width: 250px;
+    }
+
+    .col-action {
+        width: 200px;
+    }
+
+    .col-email {
+        width: 250px;
+    }
+}
