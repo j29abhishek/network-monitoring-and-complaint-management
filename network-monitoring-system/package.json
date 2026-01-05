@@ -1,6 +1,7 @@
 {
   "name": "network-monitoring-system",
   "private": true,
+  "author": "Abhishek Jaiswal",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
